@@ -14,21 +14,7 @@ weights_path = '/home/a_ladin/ds_offline/learning/project2/weights_of_preprocess
 model_init.load_state_dict(torch.load(weights_path))
 
 
-def add_bg_from_local(image_file):
-    with open(image_file, 'rb') as image_file:
-        encoded_string = base64.b64encode(image_file.read())
-    st.markdown(
-    f'''
-    <style>
-    .stApp {{
-        background-image: url(data:image/{'png'};base64,{encoded_string.decode()});
-        background-size: cover
-    }}
-    </style>
-    ''',
-    unsafe_allow_html=True
-    )
-add_bg_from_local('realistic-studio-lights-empty.jpg')
+
 
 
 streamlit_style = """
