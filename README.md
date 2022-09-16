@@ -3,7 +3,7 @@ Sentiment analysis, generation text, summarization and QA bot.
 
 Streamlit is fulled with artificial intelligent.
 
-Instruction how to run your strimlit:
+#### Instruction how to run your streamlit:
 
 - clone this repository
 - install requirements.txt
